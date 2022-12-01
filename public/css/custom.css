@@ -1,0 +1,479 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url(fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansBolder';
+    src: url(fonts/OpenSans-ExtraBold.ttf);
+}
+
+html body,
+body{
+    font-family: 'OpenSans';
+}
+
+.login-button{
+    background-color: #20b2aa;
+    font-size: 20px;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: 'OpenSansBolder';
+}
+
+.header-main,
+.owl-carousel,
+.products,
+.about-us-inner,
+.services{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.login-button-wrap{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-remainders{
+    color: rgb(108,97,160);
+    text-align: right;
+}
+
+.login-remainders a{
+    color: rgb(108,97,160);
+    font-family: 'OpenSansBold';
+}
+
+.login-nav a{
+    font-size: 16px;
+    font-family: 'OpenSansBold';
+    color : #4D4D4D;
+    letter-spacing: 0.58px;
+}
+
+.db-nav a{
+    font-size: 16px;
+    font-family: 'OpenSans';
+    color : #4D4D4D;
+    text-decoration: none;
+}
+
+.login-nav a.purple-bold,
+.db-nav a.purple-bold{
+    font-family: 'OpenSansBold';
+    color : #6C618F;
+}
+
+.label-cls{
+    font-family: 'OpenSansBold';
+    color: #4D4D4D;
+}
+
+.guest-login{
+    background-image: url(../img/login-bg.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.guest-login > .bg-gray-100{
+    background: transparent;
+}
+
+#settings-toggle{
+    margin: 0;
+}
+
+.single-form.max-w-7xl{
+    max-width: 500px;
+}
+
+.notification{
+    width: 100%;
+    background-color: #20b2aa;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+table.table tr th{
+    background-color: #6C618F;
+    color: #ffffff;
+    font-family: 'OpenSansBold';
+}
+
+table.table tr td a{
+    color: #6C618F;
+}
+
+body h5{
+    font-family: 'OpenSansBold';
+    font-size: 18px;
+}
+
+body .page-item.active .page-link{
+    background-color: #6C618F;
+    border-color: #6C618F;
+}
+
+.paginate_button.page-item.first,
+.paginate_button.page-item.last{
+    display: none;
+}
+
+.my-books{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-book{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: 24%;
+    margin: 2px;
+    position: relative;
+}
+
+.my-book-inner{
+    padding: 15px;
+    font-size: 15px;
+}
+
+.book-buttons .btn{
+    font-size: 15px;
+}
+
+.btn-close-custom{
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: #000;
+    background: url(../img/close.png) center/1em auto no-repeat;
+    border: 0;
+    border-radius: 0.25rem;
+    opacity: 0.5;
+    position: absolute;
+    right: 10px;
+}
+
+.book-buttons{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.book-buttons a.btn.btn-primary,
+.book-buttons .btn.btn-primary{
+    background-color: #6C618F;
+    border-color: #6C618F;
+}
+
+.book-buttons .btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.books-updated{
+    margin-top: 10px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 15px;
+}
+
+.my-book img.add-new{
+    width: 64px;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+}
+
+.my-books.non-active div.my-book{
+    background-color: #d0d0d0;
+}
+
+.my-books.add-new-book{
+    margin: 15px 0;
+}
+
+.single-form .new-book .form-group{
+    margin-top: 15px;
+} 
+
+.order-book{
+    display: flex;
+}
+
+.book-buttons.order-version{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.owl-carousel .slide{
+    position: relative;
+}
+
+.owl-carousel .slide button{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.login-button.homep{
+    background-color: #209d95;
+    padding: 20px 25px;
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    font-family: 'OpenSans';
+}
+
+.products{
+    display: flex;
+    margin: 80px auto;
+}
+
+.col-md-3{
+    width: 25%;
+}
+
+.col-md-4{
+    width: 33%;
+}
+
+.products .col-inner{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.products h5{
+    color: #4d4d4d;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.products p{
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #4d4d4d;
+}
+
+.products p strong{
+    font-family: 'OpenSansBold';
+}
+
+a.button-product{
+    color: #6C6187;
+    border: 2px solid #6C6187;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'OpenSansBold';
+    text-transform: uppercase;
+}
+
+button.button-product{
+    background-color: #6C6187;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+    font-family: 'OpenSansBold';
+}
+
+.products .col-inner:hover a.button-product{
+    background-color: #6C6187;
+    color: #ffffff;
+}
+
+.products .col-inner img{
+    border: 3px solid transparent;
+}
+
+.products .col-inner:hover img{
+    border-color: #6C6187;
+}
+
+.about-us{
+    background-color: #eef3f3;
+}
+
+.about-us-inner{
+    display: flex;
+    padding: 40px 0;
+}
+
+.col-md-6{
+    width: 50%;
+}
+
+.about-us .col-inner{
+    padding: 0 40px;
+    text-align: center;
+}
+
+.about-us h3{
+    font-size: 22px;
+    padding-bottom: 10px;
+    color: #4d4d4d;
+    font-family: 'OpenSansSemiBold';
+    letter-spacing: 3.1px;
+    border-bottom: 3px solid #6C6187;
+    width: 270px;
+    margin: 0 auto 30px;
+}
+
+.about-us p{
+    padding-bottom: 30px;
+    line-height: 28px;
+    letter-spacing : 2.2px;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+a.button-product.green{
+    background-color: #209d95;
+    border-color: #209d95;
+    color: #ffffff;
+}
+
+.about-us img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services{
+    display: flex;
+    padding: 100px 30px;
+
+}
+
+.col-md-2{
+    width: 20%;
+}
+
+.services .col-inner{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.services p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color : #4D4D4D;
+    font-style: italic;
+    padding-top: 15px;
+}
+
+.services img{
+    margin: 0 auto;
+}
+
+.footer-top,
+.footer-bottom{
+    display: flex;
+}
+
+.footer{
+    padding: 40px 0 25px;
+    background-color: #6C6187;
+}
+
+.footer h2{
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 25px;
+    color: #ffffff;
+}
+
+.footer-bottom{
+    font-size : 14px;
+    line-height : 25px;
+    letter-spacing : 1.6px;
+    color : #FFFFFF;
+}
+
+.footer-bottom .col-inner{
+    padding-top: 40px;
+}
+
+.footer-bottom .social{
+    display: inline;
+}
+
+.footer-bottom p{
+    padding-bottom: 15px;
+}
+
+.my-books.add-new-book a.my-book{
+    width: 100%;
+    height: 100px;
+}
+
+body input[type='text'],
+body input[type='email'],
+body input[type='password']{
+    font-size: 15px;
+}
+
+body .guest-login .mt-4{
+    margin-top: 5px;
+}
+
+body .guest-login .min-h-screen > .mt-6{
+    margin-top: 0;
+}
+
+body .guest-login .min-h-screen{
+    justify-content: initial;
+    padding-top: 36px;
+}
+    
+
+@media screen and (max-width: 1024px) {
+    .col-md-2,
+    .col-md-3,
+    .col-md-6,
+    .products,
+    .services,
+    .about-us,
+    .footer-top,
+    .footer-bottom{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }    
+
+    .login-button.homep{
+        font-size: 14px;
+        padding: 5px 10px;
+        letter-spacing: 1px;
+    }
+
+}

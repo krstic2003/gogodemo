@@ -1,0 +1,10 @@
+{
+    "Reset Password Notification": "Promena šifre",
+    "You are receiving this email because we received a password reset request for your account.": "Dobili ste ovaj email jer ste pokrenuli proces promene šfire.",
+    "Reset Password": "Promena šifre",
+    "If you did not request a password reset, no further action is required.": "Ukoliko niste pokrenuli proces promene šifre, nemojte preduzimati ništa.",
+    "This password reset link will expire in :count minutes.": "Link za promenu šifre ističe za :count minuta.",
+    "Verify Email Address": "Potvdite email adresu",
+    "Please click the button below to verify your email address.": "Kliknite na dugme ispod da bi potvrdili email adresu.",
+    "If you did not create an account, no further action is required.": "Ukoliko nemate nalog kod nas, nemojte preduzimati ništa."
+}

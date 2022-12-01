@@ -1,0 +1,200 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Deck Title</title>
+
+<meta name="description" content="TODO" />
+<meta name="author" content="TODO" />
+
+<link href="css/main.css" rel="stylesheet" type='text/css' />
+
+<link href='css/web-fonts.css' rel='stylesheet' type='text/css' />
+
+
+<style>
+body {
+	font-size: 18pt;
+	width: 215.9mm;
+	height: 279.4mm;
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	padding-left: 5%;
+	float: none !important;
+	overflow: visible;
+	background: none;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+@page {
+	margin: 0;
+	margin-top: 20px;
+}
+
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.slide-and-notes {
+	position: relative;
+}
+
+.slide {
+	position: relative;
+	width: 1024px;
+	height: 768px;
+	border: 2px solid black;
+}
+
+.notes {
+	position: absolute;
+	left: 1034px;
+	width: 50px;
+	height: 768px;
+	top: 0px;
+}
+
+.notes-handout {
+	transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+}
+
+.bg-default {
+  background: transparent;
+}
+
+/*
+included for legacy support of old decks with the defaultbg attribute set.
+*/
+.defaultbg {
+  background: -webkit-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -moz-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -ms-radial-gradient(#F0F0F0, #BEBEBE);
+  background: -o-radial-gradient(#F0F0F0, #BEBEBE);
+  background: radial-gradient(#F0F0F0, #BEBEBE);
+}
+
+.bg-solid-orange {
+	background-color: #774040;
+}
+
+.bg-solid-black {
+	background-color: #222;
+}
+
+.bg-solid-light {
+	background-color: white;
+}
+
+.bg-solid-smoke {
+	background-color: #DDD;
+}
+
+.bg-solid-yellow {
+	background-color: #D1B377;
+}
+
+.bg-solid-grass {
+	background-color: #597847;
+}
+
+.bg-solid-darkgreen {
+	background-color: #134952;
+}
+
+.bg-solid-sky {
+	background-color: #515E99;
+}
+
+.bg-solid-lavender {
+	background-color: #443C4D;
+}
+
+.bg-solid-purple {
+	background-color: #6C478F;
+}
+
+.bg-solid-salmon {
+	background-color: #C98D8D;
+}
+
+
+@media print {
+	.slide-and-notes:nth-child(3)	{ page-break-after: always; }
+	.slide-and-notes { page-break-inside: avoid; }
+}
+</style>
+
+<script src="scripts/onready.js"></script>
+<script src="scripts/loadPresentation.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
+<script type="text/javascript">
+
+	ready(function() {
+		if (document.getElementById('launched-placeholder'))
+			loadPresentation();
+
+		document.body.className = "";
+
+		function htmlEntities(str) {
+	        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+	    }
+
+	    var getHtml = $(".notes-handout").html();
+	    
+	    var getHtmlConverted = htmlEntities(getHtml);
+	    var getCssConverted = htmlEntities("<style>body,html{overflow:visible}.bg-default,body{background:0 0}body{font-size:18pt;width:215.9mm;height:279.4mm;margin:0 auto!important;border:0;padding:0 0 0 5%;float:none!important}html{width:100%;height:100%}@page{margin:0;margin-top:20px}.componentContainer{position:absolute;line-height:normal}.slide,.slide-and-notes{position:relative}.transformContainer{-webkit-transform-origin:0 0;-moz-transform-origin:0 0;transform-origin:0 0}.slide{width:1024px;height:768px;border:2px solid #000}.notes{position:absolute;left:1034px;width:50px;height:768px;top:0}.notes-handout{transform-origin:0 0;-moz-transform-origin:0 0;-webkit-transform-origin:0 0;transform:scale(.5);-webkit-transform:scale(.5);-moz-transform:scale(.5)}.defaultbg{background:-webkit-radial-gradient(#f0f0f0,#bebebe);background:-moz-radial-gradient(#f0f0f0,#bebebe);background:-ms-radial-gradient(#f0f0f0,#bebebe);background:-o-radial-gradient(#f0f0f0,#bebebe);background:radial-gradient(#f0f0f0,#bebebe)}.bg-solid-orange{background-color:#774040}.bg-solid-black{background-color:#222}.bg-solid-light{background-color:#fff}.bg-solid-smoke{background-color:#ddd}.bg-solid-yellow{background-color:#d1b377}.bg-solid-grass{background-color:#597847}.bg-solid-darkgreen{background-color:#134952}.bg-solid-sky{background-color:#515e99}.bg-solid-lavender{background-color:#443c4d}.bg-solid-purple{background-color:#6c478f}.bg-solid-salmon{background-color:#c98d8d}@media print{.slide-and-notes:nth-child(3){page-break-after:always}.slide-and-notes{page-break-inside:avoid}}a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.impress-enabled .hint,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}#overview,.hint,.impress-supported .fallback-message{display:none}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.fallback-message{font-family:sans-serif;line-height:1.3;width:780px;padding:10px 10px 0;margin:20px auto;border:1px solid #e4c652;border-radius:10px;background:#eedc94}.fallback-message p{margin-bottom:10px}.step{position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box}.impress-enabled .step.active,.impress-enabled .strut-slide-overview .step{opacity:1}.impress-enabled .step{margin:0;opacity:.3;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.impress-on-overview .step{opacity:1;cursor:pointer}.hint{position:fixed;left:0;right:0;bottom:200px;background:rgba(0,0,0,.5);color:#eee;text-align:center;font-size:50px;padding:20px;z-index:100;opacity:0;-webkit-transform:translateY(400px);-moz-transform:translateY(400px);-ms-transform:translateY(400px);-o-transform:translateY(400px);transform:translateY(400px);-webkit-transition:opacity 1s,-webkit-transform .5s 1s;-moz-transition:opacity 1s,-moz-transform .5s 1s;-ms-transition:opacity 1s,-ms-transform .5s 1s;-o-transition:opacity 1s,-o-transform .5s 1s;transition:opacity 1s,transform .5s 1s}.strut-slide-0 .hint{opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);-webkit-transition:opacity 1s 5s,-webkit-transform .5s 2.5s;-moz-transition:opacity 1s 5s,-moz-transform .5s 2.5s;-ms-transition:opacity 1s 5s,-ms-transform .5s 2.5s;-o-transition:opacity 1s 5s,-o-transform .5s 2.5s;transition:opacity 1s 5s,transform .5s 2.5s}.impress-enabled{pointer-events:none}.impress-enabled #impress{pointer-events:auto}</style>");
+	    //console.log(getCssConverted+getHtmlConverted);
+	    $("#html_pdf").val(getCssConverted+getHtmlConverted);  
+
+
+
+	    $(".pdf-me-list").on('click', function(e){
+	    	e.preventDefault();
+	    	//alert("aaaaaaaa");
+	    	$("#pdf-p-list").submit();
+	    });
+
+	});
+
+
+    
+</script>
+</head>
+
+<body>
+	    
+
+	<div id="launched-placeholder"></div>
+
+    <form id="pdf-p-list" class="pdf-p" action="tcpdf/examples/index.php" method="POST">
+        <input id="html_pdf" type="hidden" name="html_pdf" value="">
+        <input type="submit" value="PDF">
+    </form>
+
+    <div id="launched-placeholder-load"></div>
+
+</body>
+
+</html>
